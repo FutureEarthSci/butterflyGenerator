@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ap task</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 class="centeredTxt">unnamed butterfly game</h1>
+    <button type="button" class="toolBtn" id="brush" onclick="setTool(0);">brush</button>
+    <button type="button" class="toolBtn" id="eraser" onclick="setTool(1);">eraser</button>
+    <button type="button" class="toolBtn" id="bucket" onclick="setTool(2);">bucket</button>
+    <button type="button" id="resetBtn" onclick="clearCanvas();">reset</button>
+    <p id="dispTool">current tool: brush</p>
+    <div id="colorBox"></div>
+    <p id="dispColor">current color: "#EE4B2B"</p>
+    
+    <button type="button" class="colorBtn" onclick="setColor(colorList['red']);">red</button>
+    <button type="button" class="colorBtn" onclick="setColor(colorList['blue']);">blue</button>
+    <button type="button" class="colorBtn" onclick="setColor(colorList['green']);">green</button>
+    <button type="button" class="colorBtn" onclick="setColor(colorList['yellow']);">yellow</button>
+    <button type="button" class="colorBtn" onclick="setColor(colorList['orange']);">orange</button>
+    <br>
+    <button type="button" class="colorBtn" onclick="setColor(colorList['violet']);">violet</button>
+    <button type="button" class="colorBtn" onclick="setColor(colorList['grey']);">grey</button>
+    <button type="button" class="colorBtn" onclick="setColor(colorList['turquoise']);">turquoise</button>
+    <button type="button" class="colorBtn" onclick="setColor(colorList['black']);">black</button>
+    <button type="button" class="colorBtn" onclick="setColor(colorList['white']);">white</button>
+    <br>
+    <button type="button" id="export" onclick="exportTemp();">EXPORT</button>
+
+
+    <p class="priArr" id="printArray">all white rn</p>
+    <p class="priArr" id="printTemp">all white rn</p>
+    <canvas id="drawCanvas" width="256" height="256"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>
